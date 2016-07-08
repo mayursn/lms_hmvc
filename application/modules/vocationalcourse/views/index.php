@@ -37,13 +37,10 @@ if($this->session->userdata('role_name')!='Student')
                             <th><?php echo ucwords("course fee"); ?></th>
                             <th><?php echo ucwords("professor name"); ?></th>
                             <th>Status</th>
-<<<<<<< HEAD
                             <th>Actions</th>
-=======
                             <?php if ($update || $delete) { ?>
                                     <th>Actions</th>
                                 <?php } ?> 
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
                         </tr>
                     </thead>
 
@@ -111,11 +108,7 @@ if($this->session->userdata('role_name')!='Student')
 <!-- End #content -->
 <?php
 }
-<<<<<<< HEAD
 else
-=======
-elseif($this->session->userdata('role_name')=="Student")
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
 {
    ?>
 <div class=row>                      

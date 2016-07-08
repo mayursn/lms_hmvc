@@ -182,11 +182,7 @@ class Subject extends MY_Controller {
         $this->db->where("FIND_IN_SET('".$this->session->userdata('user_id')."',sa.professor_id) !=",0);
         $this->db->from('subject_association sa');
         $this->db->join('subject_manager sm','sm.sm_id=sa.sm_id');
-<<<<<<< HEAD
         $this->db->join('degree d','d.d_id=sa.degree_id');
-=======
-	$this->db->join('degree d','d.d_id=sa.degree_id');
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
         $this->db->join('course c','c.course_id=sa.course_id');
         $this->db->join('semester s','s.s_id=sa.sem_id');
         $this->data['subject']= $this->db->get()->result();

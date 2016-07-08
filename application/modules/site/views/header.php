@@ -45,11 +45,7 @@
 
                                                     $name = $user->first_name.' '.$user->last_name;
                                                     $dashboard_url = base_url('user/dashboard/');
-<<<<<<< HEAD
-                                                    $profile_url = base_url('user/manage_profile');
-=======
                                                     $profile_url = base_url('profile');
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
                                                     $image = base_url('uploads/system_image/'.$user->profile_pic);
                                            
                                             ?>

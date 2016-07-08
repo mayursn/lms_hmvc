@@ -30,11 +30,7 @@ class Event_manager_model extends MY_Model {
         {
             $event['status'] = 0;
         }
-        
-<<<<<<< HEAD
-=======
         $event['updated_date'] = date('Y-m-d H:i:s');
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
         return $event;
     }
 }

@@ -52,9 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'site';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
-<<<<<<< HEAD
-
-=======
-$route['pages/(:any)'] = 'pages/view/pages/$1';
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
-$route['module_name'] = 'site';
+//<<<<<<< HEAD
+//
+//=======
+//$route['pages/(:any)'] = 'pages/view/pages/$1';
+//>>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
+//$route['module_name'] = 'site';

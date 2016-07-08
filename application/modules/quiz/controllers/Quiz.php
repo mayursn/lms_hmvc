@@ -105,10 +105,7 @@ class Quiz extends MY_Controller {
      * @param string $quiz_id
      */
     function play_online_quiz($quiz_id) {
-<<<<<<< HEAD
-=======
         //call validate function
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
         if ($this->session->userdata('quiz_id') != hash('sha1', $quiz_id)) {
             $is_avail_quiz = $this->Quiz_model->get($quiz_id);
             if ($is_avail_quiz) {
@@ -291,11 +288,9 @@ class Quiz extends MY_Controller {
      */
     function is_quiz_available_to_user($quiz_id = '', $user_id = '') {
         $quiz = $this->Quiz_model->get($quiz_id);
-        if ($quiz->validity_type == 'Day') {
-<<<<<<< HEAD
-=======
-            
->>>>>>> a54931c7c290e228035a431bb36cb115c8e192c3
+        if ($quiz->validity_type == 'Day') {            
+            //$end =  date('Y-m-d', strtotime($quiz->end_date. ' + 2 days'));
+            //  && strtotime(date('Y-m-d')) >= $end
             if (strtotime(date('Y-m-d')) <= strtotime($quiz->end_date)) {
                 return TRUE;
             }
